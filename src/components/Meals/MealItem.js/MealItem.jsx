@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "./Counter";
 import classes from './MealItem.module.css'
 
 function MealItem(props) {   // или ({name, description , price})   и будет без пропс
@@ -10,7 +11,9 @@ function MealItem(props) {   // или ({name, description , price})   и буд
         <p className={classes.description}>{props.description}</p>
         <p className={classes.price}>{price}$</p>
       </div>
+      <Counter/>
     </li>
+    
   );
 }
 
