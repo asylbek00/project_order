@@ -1,7 +1,7 @@
 import React from "react";
 import Counter from "./Counter";
 import classes from "./MealItem.module.css";
-// import MealItemForm from "./MealItemForm";
+import MealItemForm from "./MealItemForm";
 
 function MealItem(props) {
   // или ({name, description , price})   и будет без пропс
@@ -15,7 +15,8 @@ function MealItem(props) {
         <p className={classes.description}>{props.description}</p>
         <p className={classes.price}>{price1}$</p>
       </div>
-      <Counter price2={price1}/>
+      {/* <Counter price2={price1}/> */}
+      <div><MealItemForm/></div>
 
       {/* <div>
         <MealItemForm />
