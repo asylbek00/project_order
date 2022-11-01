@@ -2,9 +2,9 @@ import React from 'react'
 import Input from '../../UI/Input'
 import styles from'./MealItemForm.module.css'
 
-function MealItemForm() {
+function MealItemForm(props) {
     const InputProps ={
-        id: 'Amount',
+        id: `amount_id-${props.id}`,
         type: 'number',
         min: '1',
         max: '5',
