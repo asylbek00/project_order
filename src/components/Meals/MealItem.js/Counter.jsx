@@ -23,7 +23,7 @@ function Counter({ price2 }) {
       <button className={classes.btn} onClick={plusHand}>+</button>
       <span className={classes.count}>{count}</span>
       <button className={classes.btn} onClick={minusHand}>-</button>
-      <p className={classes.total}>total : {price2 * count}$</p>
+      <p className={classes.total}>total : {Number(price2 * count).toFixed(0)}$</p>
     </div>
   );
 }
