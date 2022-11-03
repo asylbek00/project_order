@@ -15,8 +15,8 @@ function MealItem(props) {
         <p className={classes.description}>{props.description}</p>
         <p className={classes.price}>{price1}$</p>
       </div>
-      {/* <Counter price2={price1}/> */}
-      <div><MealItemForm id={props.id}/></div>
+      <Counter price2={price1}/>
+      {/* <div><MealItemForm id={props.id}/></div> */}
 
       {/* <div>
         <MealItemForm />
